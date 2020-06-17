@@ -1,21 +1,26 @@
 {
-    "compilerOptions": {
-        "outDir": "./dist/",
-        "sourceMap": true,
-        "module": "esnext",
-        "target": "es6",
-        "jsx": "react",
-        "strict":true,
-        "noImplicitReturns":true,
-        "noImplicitAny": true,
-        "allowSyntheticDefaultImports": true,
-        "suppressImplicitAnyIndexErrors": true,
-        "allowJs": true,
-        "moduleResolution": "node",
-        "declaration": false, // don't emit declarations
-
-    },
-    "include": ["src/**/*"],
-    "exclude": ["node_modules", "**/*.spec.ts","**/*.test.ts","dist","webpack"],
-    "compileOnSave": false
-  }
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "module": "esnext",
+    "target": "es6",
+    "jsx": "react",
+    "strict": true,
+    "noImplicitReturns": true,
+    "noImplicitAny": true,
+    "allowSyntheticDefaultImports": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "allowJs": true,
+    "moduleResolution": "node",
+    "declaration": false // don't emit declarations
+  },
+  "include": ["src/**/*"],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts",
+    "**/*.test.ts",
+    "dist",
+    "webpack"
+  ],
+  "compileOnSave": false
+}
