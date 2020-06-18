@@ -27,14 +27,14 @@ module.exports = {
     'no-undef': 'error',
     'no-console': 'warn',
   },
-  overrides: [
-    {
-      files: ['**/index.tsx'],
-      rules: {
-        'no-console': 'off',
-      },
-    },
-  ],
+  // overrides: [
+  //   {
+  //     files: ['**/index.tsx'],
+  //     rules: {
+  //       'no-console': 'off',
+  //     },
+  //   },
+  // ],
 
   settings: {
     react: {
