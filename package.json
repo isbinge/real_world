@@ -62,7 +62,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "commit-msg": "echo Wanna life to be better"
+      "commit-msg": "echo $HUSKY_GIT_PARAMS"
     }
   }
 }
