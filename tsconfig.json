@@ -15,12 +15,6 @@
     "declaration": false // don't emit declarations
   },
   "include": ["src/**/*"],
-  "exclude": [
-    "node_modules",
-    "**/*.spec.ts",
-    "**/*.test.ts",
-    "dist",
-    "webpack"
-  ],
+  "exclude": ["node_modules", "**/*.spec.ts", "**/*.test.ts", "dist", "webpack"],
   "compileOnSave": false
 }

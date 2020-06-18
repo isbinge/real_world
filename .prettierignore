@@ -1,0 +1,7 @@
+**/*.(svg|png|jpg)
+package.json
+node_modules
+.eslintignore
+.gitignore
+.prettierignore
+*.lock
