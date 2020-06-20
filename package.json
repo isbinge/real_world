@@ -1,14 +1,15 @@
 {
   "name": "real_world",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "standard-version",
     "lint:fix": "eslint --fix --ext .ts,tsx --cache --format=pretty ./src",
     "start": "webpack-dev-server --NODE_ENV=development",
-    "build": "cross-env NODE_ENV=production webpack-dev-server ",
-    "bundle:analyze": "webpack-dev-server --env.ANAN"
+    "build": "cross-env NODE_ENV=production webpack-dev-server",
+    "bundle:analyze": "cross-env OPEN_ANALYZER=true NODE_ENV=production webpack-dev-server "
   },
   "repository": {
     "type": "git",
@@ -39,6 +40,8 @@
     "@typescript-eslint/eslint-plugin": "^3.2.0",
     "@typescript-eslint/parser": "^3.2.0",
     "clean-webpack-plugin": "^3.0.0",
+    "conventional-changelog-cli": "^2.0.34",
+    "cross-env": "^7.0.2",
     "css-loader": "^3.5.3",
     "cz-conventional-changelog": "^3.2.0",
     "eslint": "^7.2.0",
@@ -49,6 +52,7 @@
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
     "prettier": "^2.0.5",
+    "standard-version": "^8.0.0",
     "style-loader": "^1.2.1",
     "ts-loader": "^7.0.5",
     "typescript": "^3.9.5",
